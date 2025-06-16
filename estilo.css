@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+        a{
+
+            font-size: 22px;
+            color: #000  ;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* seccion I N I C I O */
+
+        #inicio {
+            background: url("img/iniciopag.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+
+        #inicio .contenido header {
+            background-color: rgba(0, 0, 0, .8);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+        }
+
+        #inicio .contenido header .contenido-header {
+            max-width: 1300px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+        }
+
+        #inicio .contenido header .contenido-header h1 {
+            text-align: center;
+            color: #2023dd;
+        }
+
+        #inicio .contenido header .contenido-header nav ul {
+            list-style: none;
+            display: flex;
+            align-items:center;
+        }
+
+        #inicio .contenido header .contenido-header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 12px;
+            font-weight: 400;
+            transition: .5s;
+        }
+
+        #inicio .contenido header .contenido-header nav ul li a:hover {
+            color: #2023dd;
+        }
+
+        #inicio .contenido header .contenido-header .seleccionado {
+            color: #2023dd;
+        }
+
+        #icono-nav {
+            color: #fff;
+            display: none;
+        }
+
+        /* seccion QUIENES SOMOS */
+
+        #quienessomos {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 15px;
+            display: flex;
+        }
+
+
+
+        #quienessomos .contenedor-foto img {
+            padding: 0px;
+            width: 150%;
+        }
+
+        #quienessomos .quienessomos {
+            margin: 0 100px;
+        }
+
+        #quienessomos .quienessomos .titulo-seccion {
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #2023dd;
+            text-decoration-thickness: 5px;
+        }
+
+        #quienessomos .quienessomos p {
+            font-size: 14px;
+            line-height: 25px;
+            color: #565656;
+            margin-bottom: 12px;
+        }
+
+        /* seccion PROGRAMAS Y BENEFICIOS */
+
+        #servicios {
+            padding: 100px 15px;
+            text-align: center;
+            background-color: #f8f8fa;
+        }
+
+        #servicios2 {
+            padding: 100px 15px;
+            text-align: center;
+            background-color: #dbdbdb;
+        }
+
+        #servicios .titulo-seccion {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #2023dd;
+        }
+
+        #servicios .fila {
+            display: flex;
+            justify-content:space-between;
+            max-width: 1150px;
+            margin: 30px auto;
+        }
+
+        #servicios .fila .servicio {
+            max-width: 350px;
+            background-color: #ffffff;
+            padding: 30px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: .5s;
+        }
+
+        #servicios .fila .servicio h4 {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        #servicios .fila .servicio h4:hover {
+            color:#2023dd;
+        }
+
+        #servicios2 .titulo-seccion {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #2023dd;
+        }
+
+        #servicios2 .fila {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1150px;
+            margin: 30px auto;
+        }
+
+        #servicios2 .fila .servicio {
+            max-width: 350px;
+            background-color: #0e015a;
+            padding: 30px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: .5s;
+        }
+
+        #servicios2 .fila .servicio:hover {
+            box-shadow: 5px 5px 10px #2023dd, -5px -5px 10px #2023dd;
+        }
+
+        #servicios2 .fila .servicio .icono {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        #servicios2 .fila .servicio h4 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color:#eaee06
+        }
+
+        #servicios2 .fila .servicio hr {
+            width: 30%;
+            margin: auto;
+            color: #000;
+            margin-bottom: 25px;
+        }
+
+        #servicios2 .fila .servicio p {
+            font-size: 14px;
+            line-height: 22px;
+            color:#f3f3f3
+        }
+
+        /* seccion NOTICIAS */
+
+
+        #noticias {
+            padding: 100px 15px;
+            text-align: center;
+            background-color: #000000;
+        }
+
+        #noticias .titulo-seccion {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-decoration-thickness: 5px;
+        }
+
+        #noticias .fila {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+
+        #noticias .fila .proyecto {
+            max-width: 450px;
+            border: 1px solid #000;
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #noticias .fila .proyecto img {
+            width: 400px;
+            height: 200px;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        #noticias .fila .proyecto:hover img {
+            filter: grayscale(0);
+        }
+
+        #noticias .fila .proyecto .info {
+            position: absolute;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #eaee06;
+            width: 100%;
+            padding: 30px;
+            opacity: 0;
+            bottom: -10px;
+            transition: .5s;
+        }
+
+        #noticias .fila .proyecto:hover .info {
+            opacity: 1;
+            bottom: 0;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-contenido {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cerrar-modal {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* seccion C O N T A C T O */
+
+        #contacto {
+            padding: 100px 15px;
+            background-color: #f3f3f3;
+        }
+
+        #contacto .titulo-seccion {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration-thickness: 5px;
+        }
+
+        #contacto .fila p {
+            text-align: center;
+        }
+
+        /* seccion R E S P O N S I V E */
+
+        @media screen and (max-width: 800px) {
+            .redes {
+                display: none;
+            }
+
+            nav {
+                display: none;
+            }
+
+            nav.responsive {
+                display: block;
+                background-color: rgba(0, 0, 0, .8);
+                width: 100%;
+                position: absolute;
+                top: 48px;
+                left: 0;
+                padding: 10px 0;
+            }
+
+            nav.responsive ul {
+                display: block !important;
+                text-align: center;
+            }
+
+            nav.responsive ul li {
+                margin: 5px 0;
+            }
+
+            #icono-nav {
+                display: block;
+            }
+
+            #inicio .contenido .presentacion h2 {
+                font-size: 40px;
+            }
+
+            /* seccion SOBRE MI */
+            #quienessomos {
+                padding: 50px 0;
+                display: block;
+            }
+
+            #quienessomos .contenedor-foto {
+                max-width: 200px;
+                margin: auto;
+            }
+
+            #quienessomos .contenedor-foto img {
+                padding: 8px;
+            }
+
+            #quienessomos .sobremi .titulo-seccion {
+                text-align: center;
+            }
+
+            #quienessomos .sobremi h2 {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            /* seccion MIS SERVICIOS */
+            #servicios {
+                padding: 50px 15px;
+            }
+
+            #servicios .fila {
+                display: block;
+            }
+
+            #servicios .fila2 {
+                display: block;
+            }
+
+            #servicios .fila .servicio {
+                margin: 10px auto;
+            }
+
+            #servicios .fila2 .servicio {
+                margin: 10px auto;
+            }
+
+            #servicios2 {
+                padding: 50px 15px;
+            }
+
+            #servicios2 .fila {
+                display: block;
+            }
+
+            #servicios2 .fila .servicio {
+                margin: 10px auto;
+            }
+
+            /* seccion PORTFOLIO */
+            #noticias {
+                padding: 50px 0;
+            }
+
+            #noticias .fila {
+                display: block;
+            }
+
+            #noticias .fila .proyecto {
+                margin: 10px auto;
+            }
+
+            /* seccion CONTACTO */
+            #contacto {
+                padding: 50px 15px;
+            }
+
+            #contacto .contenedor-form .mitad {
+                margin-bottom: 15px;
+                display: block;
+            }
+
+            #contacto .contenedor-form .mitad input {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
